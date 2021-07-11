@@ -1,0 +1,25 @@
+{% extends 'mainsite/base/base.html' %}
+
+{% load static %}
+
+{% block title %}
+     Login
+{% endblock %}
+
+{% block site_css %}
+    <link rel="stylesheet" href="{% static 'mainsite/styles/login.css' %}">
+{% endblock %}
+
+{% block body%}
+<div id="box">
+    <br>
+    <form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+        <button style="background-color:#F4EB16; color:blue" class="btn btn-outline-info" type="submit">Login</button>
+    </form>
+    Don't have an account? <a href="/register" target="blank"><strong>register here</strong></a>!
+    <br>
+    <br>
+</div>
+{% endblock %}

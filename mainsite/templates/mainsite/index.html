@@ -1,0 +1,143 @@
+
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>AlcherStream</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+        <link rel="stylesheet" href="{% static 'mainsite/styles/mainstyles.css' %}">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Teko&amp;display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <div id="top"></div>
+
+        <header>
+        </header>
+        <div id= "navig">
+            <img class="logo" src="{% static 'mainsite/images/logo.svg' %}">
+
+            <input class="search-bar" id = "search" type="text" placeholder="Search Movie here">
+            <a href="/login"><img  class="login-button" src="{% static 'mainsite/images/profile.svg' %}"></a>
+        </div>
+
+
+        <div id="center-big">
+          {% block content %}{% endblock %}
+            <div id="big-text">
+                <h1>STREAM ALL THE POPULAR <br>
+                MOVIES ON THE GO</h1>
+                <button type="button" class="button">GET STARTED</button>
+            </div>
+        </div>
+
+        <div id="img-gly">
+            <p style="font-weight: 600; font-size: large;">BLOCKBUSTER HITS</p>
+            <div class="gallery">
+                <a target="_blank" >
+                  <img src="{% static 'mainsite/images/download.jfif' %}" class="banner" alt="Movie Name" width="100%" height="220px" style="border-radius: 8px;">
+                </a>
+                <div class="desc"><a style="color: white;">Movie Name</a>
+                  <br>
+                  <br><a style="color: white;">Rating</a>
+                  <br><a style="color: white;">Rating</a></div><br><a> </a>
+                  <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">Add to Favorites</button>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" >
+                  <img src="{% static 'mainsite/images/download%20(1).jfif' %}" class="banner" alt="Movie Name"  width="100%" height="220px" style="border-radius: 8px;">
+                </a>
+                <div class="desc"><a style="color: white;">Movie Name</a>
+                  <br>
+                  <br><a style="color: white;">Rating</a>
+                  <br><a style="color: white;">Rating</a></div><br><a> </a>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" >
+                  <img src="{% static 'mainsite/images/download%20(2).jfif' %}"  class="banner" alt="Movie Name"  width="100%" height="220px" style="border-radius: 8px;">
+                </a>
+                <div class="desc"><a style="color: white;">Movie Name</a>
+                  <br>
+                  <br><a style="color: white;">Rating</a>
+                  <br><a style="color: white;">Rating</a></div>
+                  <br><a> </a>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" >
+                  <img src="{% static 'mainsite/images/download%20(3).jfif' %}" class="banner" alt="Movie Name"  width="100%" height="220px" style="border-radius: 8px;">
+                </a>
+                <div class="desc"><a style="color: white;">Movie Name</a>
+                  <br>
+                  <br><a style="color: white;">Rating</a>
+                  <br><a style="color: white;">Rating</a></div><br><a> </a>
+              </div>
+        </div>
+
+        <div id="img-gly2">
+          <p style="font-weight: 600; font-size: large;"></p>
+          <div class="gallery">
+              <a target="_blank" >
+                <img src="{% static 'mainsite/images/download.jfif' %}" class="banner" alt="Movie Name" width="100%" height="220px" style="border-radius: 8px;">
+              </a>
+              <div class="desc"><a style="color: white;">Movie Name</a>
+                <br>
+                <br><a style="color: white;">Rating</a>
+                <br><a style="color: white;">Rating</a></div><br><a> </a>
+            </div>
+            
+            <div class="gallery">
+              <a target="_blank" >
+                <img src="{% static 'mainsite/images/download%20(1).jfif' %}" class="banner" alt="Movie Name"  width="100%" height="220px" style="border-radius: 8px;">
+              </a>
+              <div class="desc"><a style="color: white;">Movie Name</a>
+                <br>
+                <br><a style="color: white;">Rating</a>
+                <br><a style="color: white;">Rating</a></div><br><a> </a>
+            </div>
+            
+            <div class="gallery">
+              <a target="_blank" >
+                <img src="{% static 'mainsite/images/download%20(2).jfif' %}" class="banner" alt="Movie Name"   width="100%" height="220px" style="border-radius: 8px;">
+              </a>
+              <div class="desc"><a style="color: white;">Movie Name</a>
+                <br>
+                <br><a style="color: white;">Rating</a>
+                <br><a style="color: white;">Rating</a></div><br><a> </a>
+            </div>
+            
+            <div class="gallery">
+              <a target="_blank" >
+                <img src="{% static 'mainsite/images/download%20(3).jfif' %}" class="banner" alt="Movie Name"  width="100%" height="220px" style="border-radius: 8px;">
+              </a>
+              <div class="desc"><a style="color: white;">Movie Name</a>
+                <br>
+                <br><a style="color: white;">Rating</a>
+                <br><a style="color: white;">Rating</a></div><br><a> </a>
+            </div>
+            
+      </div>
+
+
+      <div class="footer">
+        <br>
+        <br>
+        <div class="socmed" style= width:100%;">
+          <a href="" class="fa fa-facebook"></a>
+          <a href="" class="fa fa-twitter"></a>
+          <a href="" class="fa <i class="fa fa-youtube-play" aria-hidden="true">&#xf16a;</i></a>
+        </div>
+        <div class="copyright" style="width: 100%;">&#169 2021 AlcherStream</div>
+        <p>Best viewed on 1024px width</p>
+      </div>
+      <script src ="{% static 'mainsite/scripts/mainscript.js' %}"></script>
+    </body>
+</html>

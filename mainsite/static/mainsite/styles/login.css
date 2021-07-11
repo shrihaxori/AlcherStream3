@@ -1,0 +1,14 @@
+body{
+    background-image: url("../images/bg.png");
+    font-size: larger;
+    flex-direction: column-reverse;
+}
+
+#box{
+    background-color: skyblue;
+    text-align: center;
+}
+
+button{
+    width: 140px;
+}
